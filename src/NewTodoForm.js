@@ -42,7 +42,7 @@ class newTodoForm extends Component{
 					  	
             <div className="form-group">
                 <label htmlFor="note-input">New note:</label>
-                <input type="text" className="form-control" id="note-input" value ={this.state.ContentInput} onChange={this.handleContentInputChange}/>                 
+                <input type="text" className="form-control" id="note-input" value ={this.state.contentInput} onChange={this.handleContentInputChange}/>                 
             </div>
               
             <div className="form-group">

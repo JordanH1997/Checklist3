@@ -39,7 +39,17 @@ header{
   margin-right: 1.5em;
   border-radius: 50%;
 }
+.line{
+  margin: 0em;
+}
+input{
+  color: black;
+}
 .note{
+  display: flex;
+  width: 100%;
+}
+.note-content{
   color: black;
   font-size: 1.3em;
   padding: 1em;
@@ -47,15 +57,16 @@ header{
 }
 .note i{
   color:#bf74e2;
-  padding: left 0.5em;
+  padding: 0.5em;
 }
-.priority{
+.note-priority{
   color: black;
-  font-size: 1.3em;
+  font-size: 1em;
   padding: 1em;
-  width: 100%;
   font-style: italic;
-  border: thin red solid;
+  text-align: end;
+  width: 100%;
+  margin-top: 1em;
 }
 
 /* Footer */

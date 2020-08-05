@@ -56,6 +56,18 @@ removeTodo = (id)=>{
   })
 
 }
+updateTodo = (id,data)=>{
+  var todos = this.state.todos
+    var updated = todos.map((todo)=>{
+      
+      return (todo.id == id) ? {...todo,...data} : todo
+    
+    })
+
+    this.setState({
+      todos:updated
+    })
+}
 
 
   render(){
@@ -75,13 +87,17 @@ removeTodo = (id)=>{
           
           {
             this.state.todos.map((todo)=>{
+              
               var todoProps = {
                 key:todo.id,
                 removeTodo: this.removeTodo,
+                updateTodo: this.updateTodo,
                 ...todo
               }
               return(
+                
                 <Todo {...todoProps}/>
+              
               )
             })
           }
